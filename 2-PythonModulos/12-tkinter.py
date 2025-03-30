@@ -25,7 +25,7 @@ def click():
     label.config(text=frase_input)
 
 # 6 Adicionando botão
-botao = tk.Button(fram, text="Enviar", command=click)
+botao = tk.Button(frame, text="Enviar", command=click)
 botao.pack()
 
 janela.mainloop()
