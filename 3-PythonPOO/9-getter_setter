@@ -1,0 +1,23 @@
+class Employee:
+    def __init__(self, nome, salario):
+        self.nome = nome
+        self.__salario = salario # não permite acesso usando dois underline
+
+    def show(self):
+        print(f'Nome {self.nome} - Salário {self.__salario}')
+
+    # Método para buscar dados
+    def get_salarios(self):
+        return self.__salario
+    
+    # Método para modificar atributo privado
+    def set_salario(self, salario):
+        self.__salario = salario
+
+fulano = Employee('Fulano', 1000)
+siclano = Employee('Siclano', 7000)
+fulano.nome = 'Fulano 2'
+fulano.show()
+siclano.show()
+fulano.set_salario(10000)
+fulano.show()
