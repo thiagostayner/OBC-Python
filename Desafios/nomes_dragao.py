@@ -27,4 +27,3 @@ def gerar_nome_dragonico(string):
 
 print(gerar_nome_dragonico('eragon'))
 print(gerar_nome_dragonico('malayalam'))
-    
